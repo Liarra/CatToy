@@ -1,6 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
+minDuty=0
+maxDuty=12
+
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11,GPIO.OUT)
 
