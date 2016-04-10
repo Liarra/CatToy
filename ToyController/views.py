@@ -15,5 +15,7 @@ def control(request):
     request_number = int(request.POST["number"])
     request_value = float(request.POST["value"]) / 10.0
 
+    #print(request_number,request_value)
+
     toy_controller.move_toy(request_value, request_number)
     return HttpResponse("OK")
