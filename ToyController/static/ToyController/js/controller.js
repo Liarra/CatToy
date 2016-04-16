@@ -40,7 +40,7 @@ $( "#controller_slider" ).change(function() {
     value:$( "#controller_slider" ).val()
   };
 
-  $.post( "/control/", payload, function( data ) {
+  $.post( "/cattoy/control/", payload, function( data ) {
    //alert(data);
   });
 });
