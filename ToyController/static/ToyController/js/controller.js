@@ -1,4 +1,4 @@
-var number=0;
+var number=-2;
 
 // using jQuery
 function getCookie(name) {
