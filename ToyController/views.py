@@ -17,5 +17,5 @@ def control(request):
 
     #print(request_number,request_value)
 
-    toy_controller.move_toy(request_value, request_number)
+    print (toy_controller.move_toy(request_value, request_number))
     return HttpResponse("OK")

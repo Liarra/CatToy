@@ -1,4 +1,5 @@
-from ToyController.tests.mocks import Servo
+#from ToyController.tests.mocks import Servo
+from ToyController.executables import Servo
 
 MOVE_OK = 0
 LATE_REQUEST = 1
