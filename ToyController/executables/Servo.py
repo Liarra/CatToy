@@ -11,6 +11,7 @@ pwm = None
 
 def startup():
     global is_started
+    global pwm
 
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(11, GPIO.OUT)
