@@ -7,7 +7,7 @@ MOVE_OK = 0
 LATE_REQUEST = 1
 
 last_request_number = 0
-inactivity_timer=Timer(60.0, print)
+inactivity_timer=Timer(20.0, print)
 
 
 def move_toy(servo_position, request_number):
@@ -45,5 +45,5 @@ def reset_inactivity_timer():
     if inactivity_timer.isAlive:
         inactivity_timer.cancel()
 
-    inactivity_timer = Timer(60.0, disable_toy)
+    inactivity_timer = Timer(20.0, disable_toy)
     inactivity_timer.start()
