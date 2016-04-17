@@ -32,7 +32,6 @@ $.ajaxSetup({
 
 $( "#controller_slider" ).change(function() {
   //alert( "Handler for .change() called." );
-
   number=number+1;
 
   var payload={
@@ -41,6 +40,7 @@ $( "#controller_slider" ).change(function() {
   };
 
   $.post( "/cattoy/control/", payload, function( data ) {
+//  $.post( "/control/", payload, function( data ) {
    //alert(data);
   });
 });
