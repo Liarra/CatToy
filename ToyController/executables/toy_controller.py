@@ -1,5 +1,6 @@
 #from ToyController.tests.mocks import Servo
 from ToyController.executables import Servo
+from ToyController.executables import Laser
 from threading import Timer
 
 
@@ -24,6 +25,7 @@ def move_toy(servo_position, request_number):
 
         if not Servo.is_started:
             Servo.startup()
+            Laser.startup()
 
         Servo.moveTo(servo_position)
         return MOVE_OK
@@ -33,10 +35,12 @@ def move_toy(servo_position, request_number):
 
 def disable_toy():
     Servo.shutdown()
+    Laser.shutdown()
 
 
 def enable_toy():
     Servo.startup()
+    Laser.startup()
 
 
 def reset_inactivity_timer():
