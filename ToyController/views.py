@@ -13,7 +13,7 @@ def control_page(request):
 
 def control(request):
     request_number = int(request.POST["number"])
-    request_value = float(request.POST["value"]) / 10.0
+    request_value = 12.0-float(request.POST["value"]) / 10.0
 
     print(request_number,request_value)
 
